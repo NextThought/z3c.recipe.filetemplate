@@ -240,7 +240,7 @@ class FileTemplate(object):
 			result.write(processed)
 			result.close()
 			os.chmod(dest, mode)
-			self.options.created(rel_path[:-3])
+			self.options.created(dest)
 		return self.options.created()
 
 	def _create_paths(self, path):
